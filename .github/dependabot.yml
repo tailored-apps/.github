@@ -1,0 +1,13 @@
+# Dependabot: cotygodniowe PR-y z nowszymi wersjami zależności (minor i patch, jeden zbiorczy PR
+# na ekosystem) oraz poprawki bezpieczeństwa z alertów, też zebrane w jeden PR.
+# Wersje major są pominięte: to migracje, nie podbicia — robi się je ręcznie.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      timezone: Europe/Warsaw
+    groups:
+      github-actions:
+        patterns: ["*"]
